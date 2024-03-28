@@ -12,17 +12,22 @@ Below are the details of the available InSitu API endpoints:
   </tr>
   <tr>
     <td rowspan="4">PurpleAir-GMU-Raw</td>
-    <td>/sensor_data</td>
+    <td>sensor_data</td>
     <td>date, min_lon, max_lon, min_lat, max_lat</td>
     <td>variable (can be pm2_5, temperature, or humidity), provider</td>
-    <td>variable: pm2_5, provider: PurpleAir-GMU-Raw</td>
+    <td>
+      <ul>
+        <li>variable: pm2_5</li>
+        <li>provider: PurpleAir-GMU-Raw</li>
+      </ul>
+    </td>
     <td>No specific constraints</td>
   </tr>
   <tr>
     <td colspan="5"><strong>Sample Request:</strong> <a href="https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&variable=pm2_5&min_lon=-123.0&max_lon=-122.0&min_lat=37.0&max_lat=38.0" target="_blank">https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&variable=pm2_5&min_lon=-123.0&max_lon=-122.0&min_lat=37.0&max_lat=38.0</a></td>
   </tr>
   <tr>
-    <td>/activities</td>
+    <td>activities</td>
     <td>sensor_ids, sd (start date)</td>
     <td>provider</td>
     <td>provider: PurpleAir-GMU-Raw</td>
@@ -38,7 +43,7 @@ Below are the details of the available InSitu API endpoints:
   </tr>
     <tr>
     <td rowspan="4">PurpleAir-GMU-Raw-Hourly</td>
-    <td>/sensor_data</td>
+    <td>sensor_data</td>
     <td>date, min_lon, max_lon, min_lat, max_lat</td>
     <td>variable (can be pm2_5, temperature, or humidity), provider</td>
     <td></td>
@@ -48,7 +53,7 @@ Below are the details of the available InSitu API endpoints:
     <td colspan="5"><strong>Sample Request:</strong> <a href="https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&variable=pm2_5&min_lon=-123.0&max_lon=-122.0&min_lat=37.0&max_lat=38.0" target="_blank">https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&variable=pm2_5&min_lon=-123.0&max_lon=-122.0&min_lat=37.0&max_lat=38.0</a></td>
   </tr>
   <tr>
-    <td>/activities</td>
+    <td>activities</td>
     <td>sensor_ids, sd (start date), ed (end date)</td>
     <td>provider</td>
     <td></td>
