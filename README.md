@@ -75,7 +75,7 @@ Below are the details of the available InSitu API endpoints:
   </tr>
     <!--   <p>PurpleAir Calibrate</p> -->
     <tr>
-    <td rowspan="4">PurpleAir-GMU-Raw-Hourly</td>
+    <td rowspan="4">PurpleAir-GMU-Cal</td>
     <td>sensor_data</td>
     <td>date, min_lon, max_lon, min_lat, max_lat, provider</td>
     <td>variable (can be pm2_5, temperature, or humidity)</td>
@@ -84,10 +84,10 @@ Below are the details of the available InSitu API endpoints:
         <li>variable: pm2_5</li>
       </ul>
     </td>
-    <td>No specific constraints</td>
+    <td>Bounding box must be within Los Angeles: [33.70, -118.67] to [34.34, -118.15]</td>
   </tr>
   <tr>
-    <td colspan="5"><strong>Sample Request:</strong> <a href="https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&variable=pm2_5&min_lon=-123.0&max_lon=-122.0&min_lat=37.0&max_lat=38.0&provider=PurpleAir-GMU-Raw-Hourly" target="_blank">https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&variable=pm2_5&min_lon=-123.0&max_lon=-122.0&min_lat=37.0&max_lat=38.0&provider=PurpleAir-GMU-Raw-Hourly</a></td>
+    <td colspan="5"><strong>Sample Request:</strong> <a href="https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&variable=pm2_5&min_lon=-118.67&max_lon=-118.15&min_lat=33.70&max_lat=34.34&provider=PurpleAir-GMU-Cal" target="_blank">https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&variable=pm2_5&min_lon=-118.67&max_lon=-118.15&min_lat=33.70&max_lat=34.34&provider=PurpleAir-GMU-Cal</a></td>
   </tr>
   <tr>
     <td>activities</td>
@@ -99,6 +99,7 @@ Below are the details of the available InSitu API endpoints:
           <li>Maximum of 500 sensors allowed per request.</li>
           <li>An end date is mandatory for each request.</li>
           <li>The time span between the start date and end date must not exceed 7 days.</li>
+          <li>Start and end dates cannot be the same.</li>
       </ul>
     </td>
   </tr>
