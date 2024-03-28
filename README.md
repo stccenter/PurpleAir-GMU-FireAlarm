@@ -45,7 +45,11 @@ Below are the details of the available InSitu API endpoints:
     <td>sensor_data</td>
     <td>date, min_lon, max_lon, min_lat, max_lat, provider</td>
     <td>variable (can be pm2_5, temperature, or humidity)</td>
-    <td></td>
+    <td>      
+      <ul>
+        <li>variable: pm2_5</li>
+      </ul>
+    </td>
     <td>No specific constraints</td>
   </tr>
   <tr>
@@ -55,11 +59,7 @@ Below are the details of the available InSitu API endpoints:
     <td>activities</td>
     <td>sensor_ids, sd (start date), ed (end date), provider</td>
     <td></td>
-    <td>
-      <ul>
-        <li>variable: pm2_5</li>
-      </ul>
-    </td>
+    <td></td>
     <td>
       <ul>
           <li>Maximum of 500 sensors allowed per request.</li>
