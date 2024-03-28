@@ -13,12 +13,11 @@ Below are the details of the available InSitu API endpoints:
   <tr>
     <td rowspan="4">PurpleAir-GMU-Raw</td>
     <td>sensor_data</td>
-    <td>date, min_lon, max_lon, min_lat, max_lat</td>
-    <td>variable (can be pm2_5, temperature, or humidity), provider</td>
+    <td>date, min_lon, max_lon, min_lat, max_lat, provider</td>
+    <td>variable (can be pm2_5, temperature, or humidity)</td>
     <td>
       <ul>
         <li>variable: pm2_5</li>
-        <li>provider: PurpleAir-GMU-Raw</li>
       </ul>
     </td>
     <td>No specific constraints</td>
@@ -28,9 +27,9 @@ Below are the details of the available InSitu API endpoints:
   </tr>
   <tr>
     <td>activities</td>
-    <td>sensor_ids, sd (start date)</td>
-    <td>provider</td>
-    <td>provider: PurpleAir-GMU-Raw</td>
+    <td>sensor_ids, sd (start date), provider</td>
+    <td></td>
+    <td></td>
     <td>
       <ul>
         <li>Maximum of 10 sensors allowed per request.</li>
@@ -44,8 +43,8 @@ Below are the details of the available InSitu API endpoints:
     <tr>
     <td rowspan="4">PurpleAir-GMU-Raw-Hourly</td>
     <td>sensor_data</td>
-    <td>date, min_lon, max_lon, min_lat, max_lat</td>
-    <td>variable (can be pm2_5, temperature, or humidity), provider</td>
+    <td>date, min_lon, max_lon, min_lat, max_lat, provider</td>
+    <td>variable (can be pm2_5, temperature, or humidity)</td>
     <td></td>
     <td>No specific constraints</td>
   </tr>
@@ -54,8 +53,8 @@ Below are the details of the available InSitu API endpoints:
   </tr>
   <tr>
     <td>activities</td>
-    <td>sensor_ids, sd (start date), ed (end date)</td>
-    <td>provider</td>
+    <td>sensor_ids, sd (start date), ed (end date), provider</td>
+    <td></td>
     <td></td>
     <td>
       <ul>
