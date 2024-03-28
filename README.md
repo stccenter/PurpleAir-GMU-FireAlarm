@@ -17,16 +17,16 @@ Below are the details of the available InSitu API endpoints:
     <td>No specific constraints</td>
   </tr>
   <tr>
-    <td colspan="4"><strong>Sample Request:</strong> <a href="https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&min_lon=-123.0&max_lon=-122.0&min_lat=37.0&max_lat=38.0">https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&min_lon=-123.0&max_lon=-122.0&min_lat=37.0&max_lat=38.0</a></td>
+    <td colspan="4"><strong>Sample Request:</strong> <a href="https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&min_lon=-123.0&max_lon=-122.0&min_lat=37.0&max_lat=38.0" target="_blank">https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&min_lon=-123.0&max_lon=-122.0&min_lat=37.0&max_lat=38.0</a></td>
   </tr>
   <tr>
     <td>/activities</td>
     <td>sensor_ids, sd (start date)</td>
-    <td>ed (end date), provider</td>
-    <td>Max 10 sensors, no end date for raw data</td>
+    <td>provider</td>
+    <td>Max 10 sensors allowed; End date is not allowed</td>
   </tr>
   <tr>
-    <td colspan="4"><strong>Sample Request:</strong> <a href="http://insitu-api.stcenter.net/activities?sensor_ids=ID1,ID2,...&sd=YYYY-MM-DD">http://insitu-api.stcenter.net/activities?sensor_ids=ID1,ID2,...&sd=YYYY-MM-DD</a></td>
+    <td colspan="4"><strong>Sample Request:</strong> <a href="http://insitu-api.stcenter.net/activities?sd=2022-07-01&sensor_ids=34653,9678,90465,14859,56109,142608,14973,55503,73135,39885&provider=PurpleAir-GMU-Raw" target="_blank">https://insitu-api.stcenter.net/activities?sd=2022-07-01&sensor_ids=34653,9678,90465,14859,56109,142608,14973,55503,73135,39885&provider=PurpleAir-GMU-Raw</a></td>
   </tr>
 </table>
 
