@@ -137,7 +137,7 @@ Below are the details of the available InSitu API endpoints:
     </td>
   </tr>
   <tr>
-    <td colspan="5"><strong>Sample Request:</strong> <a href="http://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-03&sensor_ids=34653,9678,90465,14859,56109,142608,14973,55503,73135,39885&provider=PurpleAir-GMU-Cal" target="_blank">https://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-03&sensor_ids=34653,9678,90465,14859,56109,142608,14973,55503,73135,39885&provider=PurpleAir-GMU-Cal</a></td>
+    <td colspan="5"><strong>Sample Request:</strong> <a href="https://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-02&sensor_ids=96771,4069,130445,96855,96243,27235,34873,130445,90323,80807,23945,56899&provider=PurpleAir-GMU-Cal" target="_blank">https://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-02&sensor_ids=96771,4069,130445,96855,96243,27235,34873,130445,90323,80807,23945,56899&provider=PurpleAir-GMU-Cal</a></td>
   </tr>
 </table>
 
