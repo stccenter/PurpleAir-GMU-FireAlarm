@@ -1,6 +1,6 @@
 ## PurpleAir GMU InSitu API Endpoints for FireAlarm
 
-### Below are the details of the available InSitu API endpoints to get sensor and reading data.
+### Below are the details of the InSitu API endpoints to get sensor and reading data.
 <table>
   <tr>
     <th>Provider</th>
@@ -141,7 +141,7 @@
   </tr>
 </table>
 
-### Below are the details of the available InSitu API endpoints to statistics of each sensor.
+### Below are the details of the InSitu API endpoints to get statistics of each sensor.
 
 <table>
   <tr>
