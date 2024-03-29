@@ -71,7 +71,40 @@ Below are the details of the available InSitu API endpoints:
     </td>
   </tr>
   <tr>
-    <td colspan="5"><strong>Sample Request:</strong> <a href="http://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-01&sensor_ids=34653,9678,90465,14859,56109,142608,14973,55503,73135,39885&provider=PurpleAir-GMU-Raw-Hourly" target="_blank">https://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-03&sensor_ids=34653,9678,90465,14859,56109,142608,14973,55503,73135,39885&provider=PurpleAir-GMU-Raw-Hourly</a></td>
+    <td colspan="5"><strong>Sample Request:</strong> <a href="http://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-03&sensor_ids=34653,9678,90465,14859,56109,142608,14973,55503,73135,39885&provider=PurpleAir-GMU-Raw-Hourly" target="_blank">https://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-03&sensor_ids=34653,9678,90465,14859,56109,142608,14973,55503,73135,39885&provider=PurpleAir-GMU-Raw-Hourly</a></td>
+  </tr>
+   <!--   <p>PurpleAir Intermediate</p> -->
+    <tr>
+    <td rowspan="4">PurpleAir-GMU-Intermediate</td>
+    <td>sensor_data</td>
+    <td>date, min_lon, max_lon, min_lat, max_lat, provider</td>
+    <td>variable (can be pm2_5, temperature, or humidity)</td>
+    <td>      
+      <ul>
+        <li>variable: pm2_5</li>
+      </ul>
+    </td>
+    <td>Bounding box must be within Los Angeles: [33.70, -118.67] to [34.34, -118.15]</td>
+  </tr>
+  <tr>
+    <td colspan="5"><strong>Sample Request:</strong> <a href="https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&variable=pm2_5&min_lon=-118.67&max_lon=-118.15&min_lat=33.70&max_lat=34.34&provider=PurpleAir-GMU-Cal" target="_blank">https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&variable=pm2_5&min_lon=-118.67&max_lon=-118.15&min_lat=33.70&max_lat=34.34&provider=PurpleAir-GMU-Cal</a></td>
+  </tr>
+  <tr>
+    <td>activities</td>
+    <td>sensor_ids, sd (start date), ed (end date), provider</td>
+    <td></td>
+    <td></td>
+    <td>
+      <ul>
+          <li>Maximum of 500 sensors allowed per request.</li>
+          <li>An end date is mandatory for each request.</li>
+          <li>The time span between the start date and end date must not exceed 7 days.</li>
+          <li>Start and end dates cannot be the same.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="5"><strong>Sample Request:</strong> <a href="http://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-03&sensor_ids=34653,9678,90465,14859,56109,142608,14973,55503,73135,39885&provider=PurpleAir-GMU-Cal" target="_blank">https://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-03&sensor_ids=34653,9678,90465,14859,56109,142608,14973,55503,73135,39885&provider=PurpleAir-GMU-Cal</a></td>
   </tr>
     <!--   <p>PurpleAir Calibrate</p> -->
     <tr>
@@ -104,7 +137,7 @@ Below are the details of the available InSitu API endpoints:
     </td>
   </tr>
   <tr>
-    <td colspan="5"><strong>Sample Request:</strong> <a href="http://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-03&sensor_ids=34653,9678,90465,14859,56109,142608,14973,55503,73135,39885&provider=PurpleAir-GMU-Raw-Hourly" target="_blank">https://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-03&sensor_ids=34653,9678,90465,14859,56109,142608,14973,55503,73135,39885&provider=PurpleAir-GMU-Raw-Hourly</a></td>
+    <td colspan="5"><strong>Sample Request:</strong> <a href="http://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-03&sensor_ids=34653,9678,90465,14859,56109,142608,14973,55503,73135,39885&provider=PurpleAir-GMU-Cal" target="_blank">https://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-03&sensor_ids=34653,9678,90465,14859,56109,142608,14973,55503,73135,39885&provider=PurpleAir-GMU-Cal</a></td>
   </tr>
 </table>
 
