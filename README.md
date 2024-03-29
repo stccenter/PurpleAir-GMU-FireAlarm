@@ -84,10 +84,10 @@ Below are the details of the available InSitu API endpoints:
         <li>variable: pm2_5</li>
       </ul>
     </td>
-    <td>Bounding box must be within Los Angeles: [33.70, -118.67] to [34.34, -118.15]</td>
+    <td></td>
   </tr>
   <tr>
-    <td colspan="5"><strong>Sample Request:</strong> <a href="https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&variable=pm2_5&min_lon=-118.67&max_lon=-118.15&min_lat=33.70&max_lat=34.34&provider=PurpleAir-GMU-Cal" target="_blank">https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&variable=pm2_5&min_lon=-118.67&max_lon=-118.15&min_lat=33.70&max_lat=34.34&provider=PurpleAir-GMU-Cal</a></td>
+    <td colspan="5"><strong>Sample Request:</strong> <a href="https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&variable=pm2_5&min_lon=-118.67&max_lon=-118.15&min_lat=33.70&max_lat=34.34&provider=PurpleAir-GMU-Intermediate" target="_blank">https://insitu-api.stcenter.net/sensor_data?date=2022-07-01&variable=pm2_5&min_lon=-118.67&max_lon=-118.15&min_lat=33.70&max_lat=34.34&provider=PurpleAir-GMU-Intermediate</a></td>
   </tr>
   <tr>
     <td>activities</td>
@@ -104,7 +104,7 @@ Below are the details of the available InSitu API endpoints:
     </td>
   </tr>
   <tr>
-    <td colspan="5"><strong>Sample Request:</strong> <a href="http://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-03&sensor_ids=34653,9678,90465,14859,56109,142608,14973,55503,73135,39885&provider=PurpleAir-GMU-Cal" target="_blank">https://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-03&sensor_ids=34653,9678,90465,14859,56109,142608,14973,55503,73135,39885&provider=PurpleAir-GMU-Cal</a></td>
+    <td colspan="5"><strong>Sample Request:</strong> <a href="http://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-03&sensor_ids=96771,4069,130445,96855,96243,27235,34873,130445,90323,80807,23945,56899&provider=PurpleAir-GMU-Intermediate" target="_blank">https://insitu-api.stcenter.net/activities?sd=2022-07-01&ed=2022-07-03&sensor_ids=96771,4069,130445,96855,96243,27235,34873,130445,90323,80807,23945,56899&provider=PurpleAir-GMU-Intermediate</a></td>
   </tr>
     <!--   <p>PurpleAir Calibrate</p> -->
     <tr>
