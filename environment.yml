@@ -1,0 +1,17 @@
+# conda env create -f environment.yml
+name: firealarm_notebook
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.6
+  - xarray
+  - matplotlib
+  - cartopy
+  - numpy
+  - tabulate
+  - requests
+  - pandas
+  - owslib
+  - pillow
+  - ipykernel
+  - ipywidgets
