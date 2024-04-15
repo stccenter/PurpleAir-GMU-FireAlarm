@@ -1,13 +1,17 @@
 import requests
 import urllib3
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+import matplotlib.pyplot as plt
+from matplotlib import dates as mpl_dates
+from datetime import datetime
+from collections import defaultdict
+import numpy as np
 
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 API = "https://insitu-api.stcenter.net"
 COUNTIES_ENDPOINT = f"{API}/list/countiesByState"
 SENSOR_ENDPOINT = f"{API}/sensor_data"
-
-
+ACTIVITIES_ENDPOINT = f"{API}/activities"
 
 def retrieve_bounding_box(state, county):
     PARAMS = {'state': state}
@@ -30,3 +34,23 @@ def retrieve_sensors(bounding_box, date):
     request = requests.get(url = SENSOR_ENDPOINT, params = PARAMS, verify=False)
     sensor_data = request.json()
     return sensor_data
+
+def retrieve_sensor_readings(date: list, sensor_ids: list, provider='PurpleAir-GMU-Raw-Hourly'):
+    PARAMS = {'sd': date[0], 'ed': date[1], 'sensor_ids': ','.join([str(id) for id in sensor_ids]), 'provider': provider}
+    
+    request = requests.get(url = ACTIVITIES_ENDPOINT, params = PARAMS, verify=False).json()['observations']
+    sensor_readings = {}
+
+    for entry in request:
+        platform_id = entry["platform_id"]
+        
+        date = datetime.strptime(entry["date"], '%Y-%m-%dT%H:%M:%SZ')
+
+        if platform_id not in sensor_readings:
+            # If not, initialize a new list of lists for this platform_id
+            sensor_readings[platform_id] = [[], []]
+
+        sensor_readings[platform_id][0].append(date)
+        sensor_readings[platform_id][1].append(entry["pm2_5"])
+
+    return sensor_readings
