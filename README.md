@@ -191,7 +191,7 @@
   <tr>
     <td colspan="5"><strong>Sample Request:</strong> <a href="https://insitu-api.stcenter.net/statistics?provider=PurpleAir-GMU-Intermediate&startTime=2022-07-01T00:00:00Z&endTime=2022-07-02T00:00:00Z" target="_blank">https://insitu-api.stcenter.net/statistics?provider=PurpleAir-GMU-Intermediate&startTime=2022-07-01T00:00:00Z&endTime=2022-07-02T00:00:00Z</a></td>
   </tr>
-<!--    <tr>
+<tr>
     <td rowspan="2">PurpleAir-GMU-Cal</td>
     <td>statistics</td>
     <td>provider, project, startTime, endTime</td>
@@ -202,5 +202,5 @@
   </tr>
   <tr>
     <td colspan="5"><strong>Sample Request:</strong> <a href="https://insitu-api.stcenter.net/statistics?provider=PurpleAir-GMU-Cal&startTime=2022-07-01T00:00:00Z&endTime=2022-07-02T00:00:00Z" target="_blank">https://insitu-api.stcenter.net/statistics?provider=PurpleAir-GMU-Cal&startTime=2022-07-01T00:00:00Z&endTime=2022-07-02T00:00:00Z</a></td>
-  </tr> -->
+  </tr>
 </table>
