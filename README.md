@@ -156,8 +156,8 @@
   <tr>
     <td rowspan="2">PurpleAir-GMU-Raw</td>
     <td>statistics</td>
-    <td>provider, project, startTime, endTime</td>
-    <td></td>
+    <td>provider</td>
+    <td>startTime, endTime</td>
     <td>
     </td>
     <td>No specific constraints</td>
@@ -169,8 +169,8 @@
    <tr>
     <td rowspan="2">PurpleAir-GMU-Raw-Hourly</td>
     <td>statistics</td>
-    <td>provider, project, startTime, endTime</td>
-    <td></td>
+    <td>provider</td>
+    <td>startTime, endTime</td>
     <td>
     </td>
     <td>No specific constraints</td>
@@ -182,8 +182,8 @@
    <tr>
     <td rowspan="2">PurpleAir-GMU-Intermediate</td>
     <td>statistics</td>
-    <td>provider, project, startTime, endTime</td>
-    <td></td>
+    <td>provider</td>
+    <td>startTime, endTime</td>
     <td>
     </td>
     <td>No specific constraints</td>
@@ -194,8 +194,8 @@
 <tr>
     <td rowspan="2">PurpleAir-GMU-Cal</td>
     <td>statistics</td>
-    <td>provider, project, startTime, endTime</td>
-    <td></td>
+    <td>provider</td>
+    <td>startTime, endTime</td>
     <td>
     </td>
     <td>No specific constraints</td>
