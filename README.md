@@ -195,7 +195,7 @@ https://insitu-api.stcenter.net/statistics?sensor_type=openaq_clarity&provider=C
 https://insitu-api.stcenter.net/statistics?sensor_type=openaq_clarity&provider=Clarity-GMU-Intermediate
 
 **Provider: Clarity-GMU-Cal**  
-https://insitu-api.stcenter.net/statistics?sensor_type=openaq_clarity&provider=Clarity-GMU-CalZ  
+https://insitu-api.stcenter.net/statistics?sensor_type=openaq_clarity&provider=Clarity-GMU-Cal  
 
 ----
 #### PurpleAir (sensor_type = purpleair)
