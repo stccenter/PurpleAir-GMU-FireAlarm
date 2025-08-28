@@ -189,13 +189,13 @@ Each platform block includes:
 #### OpenAQ Clarity (sensor_type = openaq_clarity)
 ----
 **Provider: Clarity-GMU-Raw-Hourly**  
-https://insitu-api.stcenter.net/statistics?sensor_type=openaq_clarity&provider=Clarity-GMU-Raw-Hourly&startTime=2024-07-01T00:00:00Z&endTime=2024-07-31T00:00:00Z  
+https://insitu-api.stcenter.net/statistics?sensor_type=openaq_clarity&provider=Clarity-GMU-Raw-Hourly
 
 **Provider: Clarity-GMU-Intermediate**  
-https://insitu-api.stcenter.net/statistics?sensor_type=openaq_clarity&provider=Clarity-GMU-Intermediate&startTime=2024-07-01T00:00:00Z&endTime=2024-07-31T00:00:00Z  
+https://insitu-api.stcenter.net/statistics?sensor_type=openaq_clarity&provider=Clarity-GMU-Intermediate
 
 **Provider: Clarity-GMU-Cal**  
-https://insitu-api.stcenter.net/statistics?sensor_type=openaq_clarity&provider=Clarity-GMU-Cal&startTime=2024-07-01T00:00:00Z&endTime=2024-07-31T00:00:00Z  
+https://insitu-api.stcenter.net/statistics?sensor_type=openaq_clarity&provider=Clarity-GMU-CalZ  
 
 ----
 #### PurpleAir (sensor_type = purpleair)
