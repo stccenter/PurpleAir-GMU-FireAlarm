@@ -130,9 +130,9 @@ The calibration endpoint is available only for sensors located in California and
 
 ### Step-by-step instructions for using the **Calibration** provider (OpenAQ example)
 
-**Step 1:** Find all sensors in Los Angeles for a given date using the `sensor_data` endpoint.
+**Step 1:** Find all sensors in California for a given date using the `sensor_data` endpoint.
 
- https://insitu-api.stcenter.net/sensor_data?sensor_type=openaq_clarity&provider=Clarity-GMU-Cal&date=2025-01-01&variable=pm2_5&min_lon=-118.95&max_lon=-117.65&min_lat=32.75&max_lat=34.82
+ https://insitu-api.stcenter.net/sensor_data?sensor_type=openaq_clarity&provider=Clarity-GMU-Cal&date=2025-01-01&variable=pm2_5&min_lon=-124.41&max_lon=-114.13&min_lat=32.53&max_lat=42.01
 
 **Step 2:** Fetch measurements with the `activities` endpoint. Use the `platform_id` values returned in Step 1 as the `sensor_ids`.
 
@@ -195,7 +195,7 @@ https://insitu-api.stcenter.net/statistics?sensor_type=openaq_clarity&provider=C
 https://insitu-api.stcenter.net/statistics?sensor_type=openaq_clarity&provider=Clarity-GMU-Intermediate
 
 **Provider: Clarity-GMU-Cal**  
-https://insitu-api.stcenter.net/statistics?sensor_type=openaq_clarity&provider=Clarity-GMU-CalZ  
+https://insitu-api.stcenter.net/statistics?sensor_type=openaq_clarity&provider=Clarity-GMU-Cal  
 
 ----
 #### PurpleAir (sensor_type = purpleair)
