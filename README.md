@@ -155,7 +155,7 @@ Step 2: Fetch measurements with the activities endpoint. Use the platform_id val
 https://insitu-api.stcenter.net/activities?sensor_type=purpleair&provider=PurpleAir-GMU-Raw&sensor_ids=83747,69031&sd=2023-01-01
 
 ----
-## Statistics Endpoints
+## Statistics Metadata Endpoints
 
 **statistics – used to query the number of available observations for a platform (sensor), along with metadata such as time coverage, location (lat/lon), observation counts, platform ID, platform short name, total observations, and measurement units.**
 
