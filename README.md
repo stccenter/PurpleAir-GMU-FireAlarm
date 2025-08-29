@@ -20,12 +20,12 @@
 | OpenAQ Clarity  | Clarity-GMU-Raw              | 3-minute data from Clarity sensors                    | Under Development  | From OpenAQ API    |
 | OpenAQ Clarity  | Clarity-GMU-Raw-Hourly       | Hourly data from Clarity sensors                      | Supported          | From OpenAQ API    |
 | OpenAQ Clarity  | Clarity-GMU-Intermediate     | Hourly data with outliers removed                     | Supported          | Derived (GMU)    |
-| OpenAQ Clarity  | Clarity-GMU-Calibrate        | Hourly data calibrated against AirNow using AI/ML with 95% Confidence Interval     | Supported          | Derived (GMU)  |
+| OpenAQ Clarity  | Clarity-GMU-Cal        | Hourly data calibrated against AirNow using AI/ML with 95% Confidence Interval     | Supported          | Derived (GMU)  |
 | OpenAQ Clarity  | Clarity-GMU-Raw-Daily            | Daily data from Clarity sensors                       | Under Development  | From OpenAQ API    |
 | PurpleAir       | PurpleAir-GMU-Raw            | 2-minute data from PurpleAir sensors (available up to 2023-10-17 03:00:00)                  | Supported          | From PurpleAir API    |
 | PurpleAir       | PurpleAir-GMU-Raw-Hourly     | Hourly data aggregated from 2-minute PurpleAir data (available up to 2023-10-17)   | Supported          | Derived (GMU)  |
 | PurpleAir       | PurpleAir-GMU-Intermediate   | Hourly data with outliers removed (available up to 2023-10-17)                     | Supported          | Derived (GMU)  |
-| PurpleAir       | PurpleAir-GMU-Calibrate      | Hourly data calibrated against AirNow using AI/ML (available up to 2023-10-17)     | Under Development        | Derived (GMU)  |
+| PurpleAir       | PurpleAir-GMU-Cal      | Hourly data calibrated against AirNow using AI/ML (available up to 2023-10-17)     | Under Development        | Derived (GMU)  |
 | PurpleAir       | PurpleAir-GMU-Raw-Daily          | Daily data from PurpleAir sensors (available up to 2023-10-17)                     | Supported          | Derived (GMU)  |
 
 ## API Endpoints Overview  
